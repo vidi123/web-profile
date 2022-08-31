@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a6a774;
+}
+.container{
+    width: 70%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #A3DDCB;
+    margin: auto;
+    text-align: center;
+    color: maroon;
+    font-family: cursive;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E8E9A1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: maroon;
+    
+}
+.gambar{
+    width: 20%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    animation: animasifoto .7s ease forwards;
+}
+.gambar h2{
+    margin: 17px 0;
+    font-size: 25px;
+}
+.gambar img{
+    width: 100%;
+    overflow: hidden;
+}
+.biodata{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: animasibio .7s ease forwards;
+}
+.biodata h3{
+    margin: 20px 0;
+    font-size: 25px;
+}
+.biodata table{
+    width: 100%;
+    height: 230px;
+    border: #E8E9A1;
+    color: white;
+}
+.biodata table tr{
+    background-color: rgb(209, 136, 1);
+}
+.biodata table tr td{
+    text-align: center;
+    background-color: goldenrod;
+}
+.hobi-dan-lagu{
+    color: maroon;
+    width: 100%;
+    background-color: #E5707E;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 20px;
+    animation: animasihobi .7s ease forwards;
+}
+.hobi-dan-lagu .hobi{
+    width: 100%;
+    padding-left: 20px;
+}
+.hobi-dan-lagu .lagu{
+    width: 80%;
+}
+.hobi-dan-lagu li{
+    margin: 8px 0;
+}
+.hobi-dan-lagu  h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.hobi-dan-lagu .lagu  h3{
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.hobi-dan-lagu a{
+    text-decoration: none;
+    color: maroon;
+    font-size: 20px;
+    transition: .4s;
+}
+.hobi-dan-lagu a:hover{
+    font-size: 21px;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: goldenrod;
+    color: rgb(150, 35, 35);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: cursive;
+}
+
+/* area animasi */
+@keyframes animasihobi {
+    0% {
+        margin-bottom: -100px;
+        opacity: 0;
+    }
+    100% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes animasifoto {
+    0% {
+        margin-left: -100px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+@keyframes animasibio {
+    0% {
+        margin-right: -100px;
+        opacity: 0;
+    }
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
